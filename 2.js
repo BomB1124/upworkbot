@@ -18,9 +18,9 @@ const PASSWORD = '`123qwer';
 const FILENAME = "accounts.txt";
 
 // Proxy server details
-const PROXY_SERVER = 'http://3.75.180.89:80';
-const PROXY_USERNAME = 'a';
-const PROXY_PASSWORD = 'a';
+const PROXY_SERVER = 'http://45.43.71.129:6727';
+const PROXY_USERNAME = '12341234';
+const PROXY_PASSWORD = 'Upwork123';
 
 const COUNTRY = 'Poland';
 
@@ -189,7 +189,7 @@ const startScript = async () => {
         });
       });
 
-      const emailAddress = `${faker.person.firstName('male')}${faker.person.lastName()}${randomNumber()}@micinemail.com`;
+      const emailAddress = `${faker.person.firstName('male')}${faker.person.lastName()}${randomNumber()}@taxibavihanoi.com`;
       updateStatus(`${formatDateTime()} ${emailAddress}`);
       updateStatus("Preparing upwork signup page...");
       await retry(() => page.goto('https://www.upwork.com/nx/signup/?dest=home', { waitUntil: 'domcontentloaded' }));

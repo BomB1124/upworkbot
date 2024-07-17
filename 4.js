@@ -189,7 +189,7 @@ const startScript = async () => {
         });
       });
 
-      const emailAddress = `${faker.person.firstName('male')}${faker.person.lastName()}${randomNumber()}@micinemail.com`;
+      const emailAddress = `${faker.person.firstName('male')}${faker.person.lastName()}${randomNumber()}@taxibavihanoi.com`;
       updateStatus(`${formatDateTime()} ${emailAddress}`);
       updateStatus("Preparing upwork signup page...");
       await retry(() => page.goto('https://www.upwork.com/nx/signup/?dest=home', { waitUntil: 'domcontentloaded' }));
